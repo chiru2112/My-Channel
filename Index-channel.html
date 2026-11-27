@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curious Mind | Explore the Unknown</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080d1b;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #101a30;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(circle, #17365d, #080d1b 70%);
+}
+
+.hero h1 {
+    font-size: clamp(45px, 9vw, 90px);
+    color: #00e5ff;
+    text-shadow: 0 0 25px #00bfff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #d4e5ff;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff3030;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.07);
+    background: #d90000;
+}
+
+section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.9;
+    color: #c8d5e8;
+    font-size: 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #14233d;
+    padding: 35px 20px;
+    border-radius: 18px;
+    border: 1px solid #244a70;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00bfff55;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #c8d5e8;
+    line-height: 1.6;
+}
+
+.videos {
+    background: #0d1629;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.video-card {
+    background: #14233d;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.loading {
+    color: #b5c7df;
+    margin: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #101a30;
+    color: #9eabc0;
+}
+
+footer a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        margin: 7px;
+        display: inline-block;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🧠 CURIOUS MIND</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#videos">Videos</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>CURIOUS MIND</h1>
+    <p>Explore. Discover. Learn. Repeat.</p>
+    <p>A world full of amazing discoveries awaits you!</p>
+
+    <a class="btn"
+       href="https://www.youtube.com/channel/UCUvNdhWJ4cAmgwRS8Efu_Vg"
+       target="_blank">
+       SUBSCRIBE NOW 🔔
+    </a>
+</div>
+
+<section class="about" id="about">
+    <h2>ABOUT US</h2>
+    <p>
+        Welcome to Curious Mind! 🧠
+
+        Explore the fascinating world of science,
+        technology, space, amazing facts and general
+        knowledge.
+
+        Discover mind-blowing facts, uncover mysteries,
+        test your knowledge and learn something new
+        every day.
+
+        Stay Curious. Keep Exploring. Never Stop Learning!
+    </p>
+</section>
+
+<section id="topics">
+    <h2>EXPLORE TOPICS</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🚀 SPACE</h3>
+            <p>Discover planets, galaxies and the mysteries of space.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔬 SCIENCE</h3>
+            <p>Explore scientific discoveries and amazing experiments.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 GENERAL KNOWLEDGE</h3>
+            <p>Learn interesting facts about our amazing world.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 TECHNOLOGY</h3>
+            <p>Discover artificial intelligence and future inventions.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧩 QUIZZES</h3>
+            <p>Challenge your brain with fun questions and riddles.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="videos" id="videos">
+    <h2>🎬 LATEST VIDEOS</h2>
+    <p>Watch our latest discoveries and adventures!</p>
+
+    <div id="videoGrid" class="video-grid">
+        <p class="loading">Loading Curious Mind videos...</p>
+    </div>
+
+    <a class="btn"
+       href="https://www.youtube.com/channel/UCUvNdhWJ4cAmgwRS8Efu_Vg"
+       target="_blank">
+       VIEW ALL VIDEOS
+    </a>
+</section>
+
+<footer>
+    <h3>🧠 CURIOUS MIND</h3>
+    <p>Stay Curious. Keep Exploring.</p>
+    <p>
+        <a href="https://www.youtube.com/channel/UCUvNdhWJ4cAmgwRS8Efu_Vg"
+        target="_blank">Visit our YouTube Channel</a>
+    </p>
+    <p style="margin-top:15px">
+        © 2026 Curious Mind
+    </p>
+</footer>
+
+<script>
+const CHANNEL_ID = "UCUvNdhWJ4cAmgwRS8Efu_Vg";
+
+const videoGrid = document.getElementById("videoGrid");
+
+async function loadVideos() {
+    try {
+        const feedURL =
+            "https://www.youtube.com/feeds/videos.xml?channel_id="
+            + CHANNEL_ID;
+
+        const proxyURL =
+            "https://api.allorigins.win/raw?url="
+            + encodeURIComponent(feedURL);
+
+        const response = await fetch(proxyURL);
+
+        if (!response.ok) {
+            throw new Error("Feed unavailable");
+        }
+
+        const xmlText = await response.text();
+
+        const xml = new DOMParser().parseFromString(
+            xmlText, "text/xml"
+        );
+
+        const entries = Array.from(
+            xml.getElementsByTagName("entry")
+        );
+
+        videoGrid.innerHTML = "";
+
+        if (entries.length === 0) {
+            videoGrid.innerHTML =
+                "<p>No public videos found yet.</p>";
+            return;
+        }
+
+        entries.slice(0, 12).forEach(entry => {
+            const title = entry.getElementsByTagName(
+                "title"
+            )[0]?.textContent || "Curious Mind Video";
+
+            const videoId = entry.getElementsByTagName(
+                "yt:videoId"
+            )[0]?.textContent;
+
+            if (!videoId) return;
+
+            const card = document.createElement("div");
+            card.className = "video-card";
+
+            const iframe = document.createElement("iframe");
+            iframe.src =
+                "https://www.youtube-nocookie.com/embed/" +
+                encodeURIComponent(videoId);
+
+            iframe.title = title;
+            iframe.loading = "lazy";
+            iframe.allow =
+                "accelerometer; autoplay; clipboard-write; " +
+                "encrypted-media; gyroscope; picture-in-picture; " +
+                "web-share";
+            iframe.allowFullscreen = true;
+
+            const heading = document.createElement("h3");
+            heading.textContent = title;
+
+            card.appendChild(iframe);
+            card.appendChild(heading);
+            videoGrid.appendChild(card);
+        });
+
+    } catch (error) {
+        videoGrid.innerHTML = `
+            <p>
+              Videos could not be loaded right now.
+              <br><br>
+              <a style="color:#00e5ff"
+              href="https://www.youtube.com/channel/${CHANNEL_ID}">
+              Watch videos on YouTube instead.
+              </a>
+            </p>`;
+    }
+}
+
+loadVideos();
+
+// Refresh the video list every 10 minutes.
+setInterval(loadVideos, 10 * 60 * 1000);
+</script>
+
+</body>
+</html>
